@@ -16,11 +16,11 @@ then
   git commit -m "First commit"
 fi
 
-REPO=$(basename `git rev-parse --show-toplevel`)
+REPO=$(basename "$(git rev-parse --show-toplevel)")
 echo "Creating github remote for repo: $REPO"
 curl -u "$USER" https://api.github.com/user/repos -d "{\"name\":\"$REPO\"}"
 echo "Setting https://github.com/$USER/$REPO to remote"
-git remote add origin https://github.com/$USER/$REPO
+git remote add origin "https://github.com/$USER/$REPO"
 git remote -v
 echo "Pushing repo"
 git push origin master
