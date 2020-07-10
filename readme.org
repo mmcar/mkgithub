@@ -1,0 +1,5 @@
+* mkgithub
+simple personal tool
+
+set up a github repo for current directory, inits a local git repo if one
+does not exist.
