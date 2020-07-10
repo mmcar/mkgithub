@@ -5,6 +5,8 @@
 # should be run within the project folder
 # assumes remote origin does not already exist
 
+# TODO: password auth with the API will be deprecated in the fall
+# for changes to make see https://developer.github.com/changes/2020-02-14-deprecating-password-auth/
 USER="mmcar"
 
 if [ ! -d .git ]; 
